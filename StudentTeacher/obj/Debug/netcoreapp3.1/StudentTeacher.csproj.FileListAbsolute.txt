@@ -1,0 +1,11 @@
+C:\Users\Julia\source\repos\StudentTeacher\bin\Debug\netcoreapp3.1\StudentTeacher.exe
+C:\Users\Julia\source\repos\StudentTeacher\bin\Debug\netcoreapp3.1\StudentTeacher.deps.json
+C:\Users\Julia\source\repos\StudentTeacher\bin\Debug\netcoreapp3.1\StudentTeacher.runtimeconfig.json
+C:\Users\Julia\source\repos\StudentTeacher\bin\Debug\netcoreapp3.1\StudentTeacher.runtimeconfig.dev.json
+C:\Users\Julia\source\repos\StudentTeacher\bin\Debug\netcoreapp3.1\StudentTeacher.dll
+C:\Users\Julia\source\repos\StudentTeacher\bin\Debug\netcoreapp3.1\StudentTeacher.pdb
+C:\Users\Julia\source\repos\StudentTeacher\obj\Debug\netcoreapp3.1\StudentTeacher.csprojAssemblyReference.cache
+C:\Users\Julia\source\repos\StudentTeacher\obj\Debug\netcoreapp3.1\StudentTeacher.AssemblyInfoInputs.cache
+C:\Users\Julia\source\repos\StudentTeacher\obj\Debug\netcoreapp3.1\StudentTeacher.AssemblyInfo.cs
+C:\Users\Julia\source\repos\StudentTeacher\obj\Debug\netcoreapp3.1\StudentTeacher.dll
+C:\Users\Julia\source\repos\StudentTeacher\obj\Debug\netcoreapp3.1\StudentTeacher.pdb

@@ -1,0 +1,10 @@
+C:\Users\Julia\source\repos\calorie\bin\Debug\calorie.exe.config
+C:\Users\Julia\source\repos\calorie\bin\Debug\calorie.exe
+C:\Users\Julia\source\repos\calorie\bin\Debug\calorie.pdb
+C:\Users\Julia\source\repos\calorie\obj\Debug\calorie.csprojAssemblyReference.cache
+C:\Users\Julia\source\repos\calorie\obj\Debug\calorie.Form1.resources
+C:\Users\Julia\source\repos\calorie\obj\Debug\calorie.Properties.Resources.resources
+C:\Users\Julia\source\repos\calorie\obj\Debug\calorie.csproj.GenerateResource.cache
+C:\Users\Julia\source\repos\calorie\obj\Debug\calorie.csproj.CoreCompileInputs.cache
+C:\Users\Julia\source\repos\calorie\obj\Debug\calorie.exe
+C:\Users\Julia\source\repos\calorie\obj\Debug\calorie.pdb

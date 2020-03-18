@@ -1,0 +1,9 @@
+C:\Users\Julia\source\repos\House\obj\Debug\House.csprojAssemblyReference.cache
+C:\Users\Julia\source\repos\House\obj\Debug\House.Form1.resources
+C:\Users\Julia\source\repos\House\obj\Debug\House.Properties.Resources.resources
+C:\Users\Julia\source\repos\House\obj\Debug\House.csproj.GenerateResource.cache
+C:\Users\Julia\source\repos\House\bin\Debug\House.exe.config
+C:\Users\Julia\source\repos\House\bin\Debug\House.exe
+C:\Users\Julia\source\repos\House\bin\Debug\House.pdb
+C:\Users\Julia\source\repos\House\obj\Debug\House.exe
+C:\Users\Julia\source\repos\House\obj\Debug\House.pdb

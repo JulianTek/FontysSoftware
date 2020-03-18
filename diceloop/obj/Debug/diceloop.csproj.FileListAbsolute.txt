@@ -1,0 +1,10 @@
+C:\Users\Julia\source\repos\diceloop\bin\Debug\diceloop.exe.config
+C:\Users\Julia\source\repos\diceloop\bin\Debug\diceloop.exe
+C:\Users\Julia\source\repos\diceloop\bin\Debug\diceloop.pdb
+C:\Users\Julia\source\repos\diceloop\obj\Debug\diceloop.csprojAssemblyReference.cache
+C:\Users\Julia\source\repos\diceloop\obj\Debug\diceloop.Form1.resources
+C:\Users\Julia\source\repos\diceloop\obj\Debug\diceloop.Properties.Resources.resources
+C:\Users\Julia\source\repos\diceloop\obj\Debug\diceloop.csproj.GenerateResource.cache
+C:\Users\Julia\source\repos\diceloop\obj\Debug\diceloop.csproj.CoreCompileInputs.cache
+C:\Users\Julia\source\repos\diceloop\obj\Debug\diceloop.exe
+C:\Users\Julia\source\repos\diceloop\obj\Debug\diceloop.pdb

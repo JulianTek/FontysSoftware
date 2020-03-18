@@ -1,0 +1,10 @@
+C:\Users\Julia\source\repos\eurodollar\bin\Debug\eurodollar.exe.config
+C:\Users\Julia\source\repos\eurodollar\bin\Debug\eurodollar.exe
+C:\Users\Julia\source\repos\eurodollar\bin\Debug\eurodollar.pdb
+C:\Users\Julia\source\repos\eurodollar\obj\Debug\eurodollar.csprojAssemblyReference.cache
+C:\Users\Julia\source\repos\eurodollar\obj\Debug\eurodollar.Form1.resources
+C:\Users\Julia\source\repos\eurodollar\obj\Debug\eurodollar.Properties.Resources.resources
+C:\Users\Julia\source\repos\eurodollar\obj\Debug\eurodollar.csproj.GenerateResource.cache
+C:\Users\Julia\source\repos\eurodollar\obj\Debug\eurodollar.csproj.CoreCompileInputs.cache
+C:\Users\Julia\source\repos\eurodollar\obj\Debug\eurodollar.exe
+C:\Users\Julia\source\repos\eurodollar\obj\Debug\eurodollar.pdb

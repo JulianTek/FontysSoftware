@@ -1,0 +1,9 @@
+C:\Users\Julia\source\repos\DagwaardeWin\bin\Debug\DagwaardeWin.exe.config
+C:\Users\Julia\source\repos\DagwaardeWin\bin\Debug\DagwaardeWin.exe
+C:\Users\Julia\source\repos\DagwaardeWin\bin\Debug\DagwaardeWin.pdb
+C:\Users\Julia\source\repos\DagwaardeWin\obj\Debug\DagwaardeWin.csprojAssemblyReference.cache
+C:\Users\Julia\source\repos\DagwaardeWin\obj\Debug\DagwaardeWin.Form1.resources
+C:\Users\Julia\source\repos\DagwaardeWin\obj\Debug\DagwaardeWin.Properties.Resources.resources
+C:\Users\Julia\source\repos\DagwaardeWin\obj\Debug\DagwaardeWin.csproj.GenerateResource.cache
+C:\Users\Julia\source\repos\DagwaardeWin\obj\Debug\DagwaardeWin.exe
+C:\Users\Julia\source\repos\DagwaardeWin\obj\Debug\DagwaardeWin.pdb

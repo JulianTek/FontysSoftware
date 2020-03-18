@@ -1,0 +1,10 @@
+C:\Users\Julia\source\repos\marimba\bin\Debug\netcoreapp3.0\marimba.exe
+C:\Users\Julia\source\repos\marimba\bin\Debug\netcoreapp3.0\marimba.deps.json
+C:\Users\Julia\source\repos\marimba\bin\Debug\netcoreapp3.0\marimba.runtimeconfig.json
+C:\Users\Julia\source\repos\marimba\bin\Debug\netcoreapp3.0\marimba.runtimeconfig.dev.json
+C:\Users\Julia\source\repos\marimba\bin\Debug\netcoreapp3.0\marimba.dll
+C:\Users\Julia\source\repos\marimba\bin\Debug\netcoreapp3.0\marimba.pdb
+C:\Users\Julia\source\repos\marimba\obj\Debug\netcoreapp3.0\marimba.AssemblyInfoInputs.cache
+C:\Users\Julia\source\repos\marimba\obj\Debug\netcoreapp3.0\marimba.AssemblyInfo.cs
+C:\Users\Julia\source\repos\marimba\obj\Debug\netcoreapp3.0\marimba.dll
+C:\Users\Julia\source\repos\marimba\obj\Debug\netcoreapp3.0\marimba.pdb

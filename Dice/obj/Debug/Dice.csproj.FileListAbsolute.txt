@@ -1,0 +1,10 @@
+C:\Users\Julia\source\repos\Dice\bin\Debug\Dice.exe.config
+C:\Users\Julia\source\repos\Dice\bin\Debug\Dice.exe
+C:\Users\Julia\source\repos\Dice\bin\Debug\Dice.pdb
+C:\Users\Julia\source\repos\Dice\obj\Debug\Dice.csprojAssemblyReference.cache
+C:\Users\Julia\source\repos\Dice\obj\Debug\Dice.Form1.resources
+C:\Users\Julia\source\repos\Dice\obj\Debug\Dice.Properties.Resources.resources
+C:\Users\Julia\source\repos\Dice\obj\Debug\Dice.csproj.GenerateResource.cache
+C:\Users\Julia\source\repos\Dice\obj\Debug\Dice.csproj.CoreCompileInputs.cache
+C:\Users\Julia\source\repos\Dice\obj\Debug\Dice.exe
+C:\Users\Julia\source\repos\Dice\obj\Debug\Dice.pdb
