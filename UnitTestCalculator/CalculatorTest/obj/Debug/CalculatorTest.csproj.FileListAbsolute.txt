@@ -1,0 +1,17 @@
+C:\Users\Julia\source\repos\CalculatorTest\obj\Debug\CalculatorTest.csprojAssemblyReference.cache
+C:\Users\Julia\source\repos\CalculatorTest\obj\Debug\CalculatorTest.csproj.CoreCompileInputs.cache
+C:\Users\Julia\source\repos\CalculatorTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Julia\source\repos\CalculatorTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Julia\source\repos\CalculatorTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Julia\source\repos\CalculatorTest\bin\Debug\CalculatorTest.dll
+C:\Users\Julia\source\repos\CalculatorTest\bin\Debug\CalculatorTest.pdb
+C:\Users\Julia\source\repos\CalculatorTest\bin\Debug\calc.exe
+C:\Users\Julia\source\repos\CalculatorTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\Julia\source\repos\CalculatorTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\Julia\source\repos\CalculatorTest\bin\Debug\calc.pdb
+C:\Users\Julia\source\repos\CalculatorTest\bin\Debug\calc.exe.config
+C:\Users\Julia\source\repos\CalculatorTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\Julia\source\repos\CalculatorTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\Julia\source\repos\CalculatorTest\obj\Debug\CalculatorTest.csproj.CopyComplete
+C:\Users\Julia\source\repos\CalculatorTest\obj\Debug\CalculatorTest.dll
+C:\Users\Julia\source\repos\CalculatorTest\obj\Debug\CalculatorTest.pdb

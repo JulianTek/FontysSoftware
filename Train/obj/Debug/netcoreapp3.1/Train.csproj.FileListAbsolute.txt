@@ -9,3 +9,5 @@ C:\Users\Julia\source\repos\Train\obj\Debug\netcoreapp3.1\Train.AssemblyInfoInpu
 C:\Users\Julia\source\repos\Train\obj\Debug\netcoreapp3.1\Train.AssemblyInfo.cs
 C:\Users\Julia\source\repos\Train\obj\Debug\netcoreapp3.1\Train.dll
 C:\Users\Julia\source\repos\Train\obj\Debug\netcoreapp3.1\Train.pdb
+C:\Users\Julia\source\repos\Train\obj\Debug\netcoreapp3.1\Train.csproj.CoreCompileInputs.cache
+C:\Users\Julia\source\repos\Train\obj\Debug\netcoreapp3.1\Train.genruntimeconfig.cache

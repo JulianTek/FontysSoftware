@@ -10,7 +10,7 @@ namespace Train
         {
             wagon Wagon = new wagon();
             Wagon.addToList();
-            Console.WriteLine(Wagon.Fill());
+            Wagon.Fill();
         }
     }
 }

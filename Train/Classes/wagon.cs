@@ -15,11 +15,12 @@ namespace Train.Classes
         private List<Animal> animals = new List<Animal>();
         private List<Animal> animalsInWagon = new List<Animal>();
 
-        public string Fill()
+        public void Fill()
         {
             bool hasCarnivoreS = false;
             bool hasCarnivoreM = false;
             bool hasCarnivoreL = false;
+            string result;
             int wagonPoints = 0;
             foreach (Animal animal in animals)
             {
@@ -40,12 +41,14 @@ namespace Train.Classes
                             }
                             else
                             {
-                                return "De wagon zit vol";
+                                result = "De wagon zit vol";
+                                Console.WriteLine(result);
                             }
                         }
                         else
                         {
-                            return "Er zitten grotere vleeseters in de wagon";
+                            result = "Er zitten grotere vleeseters in de wagon";
+                            Console.WriteLine(result);
                         }
                         break;
                     case size.medium:
@@ -62,12 +65,13 @@ namespace Train.Classes
                             }
                             else
                             {
-                                return "De wagon zit vol";
+                                result = "De wagon zit vol";
                             }
                         }
                         else
                         {
-                            return "Er zitten grotere vleeseters in de wagon";
+                            result = "Er zitten grotere vleeseters in de wagon";
+                            Console.WriteLine(result);
                         }
                         break;
                     case size.large:
@@ -84,23 +88,34 @@ namespace Train.Classes
                             }
                             else
                             {
-                                return "De wagon zit vol";
+                                result = "De wagon zit vol";
+                                Console.WriteLine(result);
                             }
                         }
                         else
                         {
-                            return "Er zitten andere vleeseters in de wagon";
+                            result = "Er zitten andere vleeseters in de wagon";
+                            Console.WriteLine(result);
                         }
                         break;
                 }
                 if (wagonPoints == 10)
                 {
                     printList();
-                    return "De wagon zit vol";
+                    result = "De wagon zit vol";
+                    Console.WriteLine(result);
                 }
             }
             printList();
-            return "Done";
+            RemoveList();
+            if (animals.Count > 0)
+            {
+                Console.WriteLine("New Wagon");
+                wagon wagonNew = new wagon();
+                wagonNew.Fill();
+            }
+            result = "Done";
+            Console.WriteLine(result);
         }
 
         public void printList()
@@ -111,10 +126,23 @@ namespace Train.Classes
             }
         }
 
+        public void RemoveList()
+        {
+            foreach(Animal animal in animalsInWagon)
+            {
+                animals.Remove(animal);
+            }
+        }
+
         public void addToList()
         {
             animals.Add(new Animal(size.medium, "Cow", false));
             animals.Add(new Animal(size.large, "Elephant", true));
+            animals.Add(new Animal(size.small, "Ant", true));
+            animals.Add(new Animal(size.large, "Dinosaur", true));
+            animals.Add(new Animal(size.large, "Tiger", true));
+            animals.Add(new Animal(size.medium, "Horse", true));
+            animals.Add(new Animal(size.large, "Moose", true));
         }
     }
 }

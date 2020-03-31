@@ -1,0 +1,20 @@
+C:\Users\Julia\source\repos\calc\bin\Debug\calc.exe.config
+C:\Users\Julia\source\repos\calc\bin\Debug\calc.exe
+C:\Users\Julia\source\repos\calc\bin\Debug\calc.pdb
+C:\Users\Julia\source\repos\calc\obj\Debug\calc.csprojAssemblyReference.cache
+C:\Users\Julia\source\repos\calc\obj\Debug\calc.Form1.resources
+C:\Users\Julia\source\repos\calc\obj\Debug\calc.Properties.Resources.resources
+C:\Users\Julia\source\repos\calc\obj\Debug\calc.csproj.GenerateResource.cache
+C:\Users\Julia\source\repos\calc\obj\Debug\calc.csproj.CoreCompileInputs.cache
+C:\Users\Julia\source\repos\calc\obj\Debug\calc.exe
+C:\Users\Julia\source\repos\calc\obj\Debug\calc.pdb
+C:\Users\Julia\source\repos\better calc\obj\Debug\calc.csprojAssemblyReference.cache
+C:\Users\Julia\source\repos\better calc\obj\Debug\calc.Form1.resources
+C:\Users\Julia\source\repos\better calc\obj\Debug\calc.Properties.Resources.resources
+C:\Users\Julia\source\repos\better calc\obj\Debug\calc.csproj.GenerateResource.cache
+C:\Users\Julia\source\repos\better calc\obj\Debug\calc.csproj.CoreCompileInputs.cache
+C:\Users\Julia\source\repos\better calc\obj\Debug\calc.exe
+C:\Users\Julia\source\repos\better calc\obj\Debug\calc.pdb
+C:\Users\Julia\source\repos\better calc\bin\Debug\calc.exe.config
+C:\Users\Julia\source\repos\better calc\bin\Debug\calc.exe
+C:\Users\Julia\source\repos\better calc\bin\Debug\calc.pdb
