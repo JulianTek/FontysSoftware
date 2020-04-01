@@ -1,0 +1,13 @@
+C:\Users\Julia\source\repos\Pancake\bin\Debug\netcoreapp3.1\Pancake.exe
+C:\Users\Julia\source\repos\Pancake\bin\Debug\netcoreapp3.1\Pancake.deps.json
+C:\Users\Julia\source\repos\Pancake\bin\Debug\netcoreapp3.1\Pancake.runtimeconfig.json
+C:\Users\Julia\source\repos\Pancake\bin\Debug\netcoreapp3.1\Pancake.runtimeconfig.dev.json
+C:\Users\Julia\source\repos\Pancake\bin\Debug\netcoreapp3.1\Pancake.dll
+C:\Users\Julia\source\repos\Pancake\bin\Debug\netcoreapp3.1\Pancake.pdb
+C:\Users\Julia\source\repos\Pancake\obj\Debug\netcoreapp3.1\Pancake.csprojAssemblyReference.cache
+C:\Users\Julia\source\repos\Pancake\obj\Debug\netcoreapp3.1\Pancake.csproj.CoreCompileInputs.cache
+C:\Users\Julia\source\repos\Pancake\obj\Debug\netcoreapp3.1\Pancake.AssemblyInfoInputs.cache
+C:\Users\Julia\source\repos\Pancake\obj\Debug\netcoreapp3.1\Pancake.AssemblyInfo.cs
+C:\Users\Julia\source\repos\Pancake\obj\Debug\netcoreapp3.1\Pancake.dll
+C:\Users\Julia\source\repos\Pancake\obj\Debug\netcoreapp3.1\Pancake.pdb
+C:\Users\Julia\source\repos\Pancake\obj\Debug\netcoreapp3.1\Pancake.genruntimeconfig.cache
