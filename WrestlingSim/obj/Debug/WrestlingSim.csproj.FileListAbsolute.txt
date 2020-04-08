@@ -1,0 +1,8 @@
+C:\Users\Julia\source\repos\WrestlingSim\bin\Debug\WrestlingSim.exe.config
+C:\Users\Julia\source\repos\WrestlingSim\bin\Debug\WrestlingSim.exe
+C:\Users\Julia\source\repos\WrestlingSim\bin\Debug\WrestlingSim.pdb
+C:\Users\Julia\source\repos\WrestlingSim\obj\Debug\WrestlingSim.csprojAssemblyReference.cache
+C:\Users\Julia\source\repos\WrestlingSim\obj\Debug\WrestlingSim.Properties.Resources.resources
+C:\Users\Julia\source\repos\WrestlingSim\obj\Debug\WrestlingSim.csproj.GenerateResource.cache
+C:\Users\Julia\source\repos\WrestlingSim\obj\Debug\WrestlingSim.exe
+C:\Users\Julia\source\repos\WrestlingSim\obj\Debug\WrestlingSim.pdb

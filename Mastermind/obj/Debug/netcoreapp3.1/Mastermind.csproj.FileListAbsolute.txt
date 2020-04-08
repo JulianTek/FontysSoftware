@@ -1,0 +1,11 @@
+C:\Users\Julia\source\repos\Mastermind\bin\Debug\netcoreapp3.1\Mastermind.exe
+C:\Users\Julia\source\repos\Mastermind\bin\Debug\netcoreapp3.1\Mastermind.deps.json
+C:\Users\Julia\source\repos\Mastermind\bin\Debug\netcoreapp3.1\Mastermind.runtimeconfig.json
+C:\Users\Julia\source\repos\Mastermind\bin\Debug\netcoreapp3.1\Mastermind.runtimeconfig.dev.json
+C:\Users\Julia\source\repos\Mastermind\bin\Debug\netcoreapp3.1\Mastermind.dll
+C:\Users\Julia\source\repos\Mastermind\bin\Debug\netcoreapp3.1\Mastermind.pdb
+C:\Users\Julia\source\repos\Mastermind\obj\Debug\netcoreapp3.1\Mastermind.csprojAssemblyReference.cache
+C:\Users\Julia\source\repos\Mastermind\obj\Debug\netcoreapp3.1\Mastermind.AssemblyInfoInputs.cache
+C:\Users\Julia\source\repos\Mastermind\obj\Debug\netcoreapp3.1\Mastermind.AssemblyInfo.cs
+C:\Users\Julia\source\repos\Mastermind\obj\Debug\netcoreapp3.1\Mastermind.dll
+C:\Users\Julia\source\repos\Mastermind\obj\Debug\netcoreapp3.1\Mastermind.pdb
