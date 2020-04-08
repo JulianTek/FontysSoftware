@@ -1,0 +1,10 @@
+C:\Users\Julia\source\repos\CashMockup\bin\Debug\CashMockup.exe.config
+C:\Users\Julia\source\repos\CashMockup\bin\Debug\CashMockup.exe
+C:\Users\Julia\source\repos\CashMockup\bin\Debug\CashMockup.pdb
+C:\Users\Julia\source\repos\CashMockup\obj\Debug\CashMockup.csprojAssemblyReference.cache
+C:\Users\Julia\source\repos\CashMockup\obj\Debug\CashMockup.Form1.resources
+C:\Users\Julia\source\repos\CashMockup\obj\Debug\CashMockup.Properties.Resources.resources
+C:\Users\Julia\source\repos\CashMockup\obj\Debug\CashMockup.csproj.GenerateResource.cache
+C:\Users\Julia\source\repos\CashMockup\obj\Debug\CashMockup.csproj.CoreCompileInputs.cache
+C:\Users\Julia\source\repos\CashMockup\obj\Debug\CashMockup.exe
+C:\Users\Julia\source\repos\CashMockup\obj\Debug\CashMockup.pdb

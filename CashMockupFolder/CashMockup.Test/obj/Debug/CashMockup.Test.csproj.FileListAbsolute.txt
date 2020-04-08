@@ -1,0 +1,17 @@
+C:\Users\Julia\source\repos\CashMockup.Test\obj\Debug\CashMockup.Test.csprojAssemblyReference.cache
+C:\Users\Julia\source\repos\CashMockup.Test\obj\Debug\CashMockup.Test.csproj.CoreCompileInputs.cache
+C:\Users\Julia\source\repos\CashMockup.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Julia\source\repos\CashMockup.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Julia\source\repos\CashMockup.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Julia\source\repos\CashMockup.Test\bin\Debug\CashMockup.Test.dll
+C:\Users\Julia\source\repos\CashMockup.Test\bin\Debug\CashMockup.Test.pdb
+C:\Users\Julia\source\repos\CashMockup.Test\bin\Debug\CashMockup.exe
+C:\Users\Julia\source\repos\CashMockup.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\Julia\source\repos\CashMockup.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\Julia\source\repos\CashMockup.Test\bin\Debug\CashMockup.pdb
+C:\Users\Julia\source\repos\CashMockup.Test\bin\Debug\CashMockup.exe.config
+C:\Users\Julia\source\repos\CashMockup.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\Julia\source\repos\CashMockup.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\Julia\source\repos\CashMockup.Test\obj\Debug\CashMockup.Test.csproj.CopyComplete
+C:\Users\Julia\source\repos\CashMockup.Test\obj\Debug\CashMockup.Test.dll
+C:\Users\Julia\source\repos\CashMockup.Test\obj\Debug\CashMockup.Test.pdb
