@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2vZ6alAW+sdMncsMMnTcxmfGK1AD+kIbDY/B3K6YpOF9Kuf2i9/mh7cQlyjaFhuYCipxFspcsDGW7fXRsiC3nQ==",
+  "dgSpecHash": "BluCovhzjelCXxBAQA3yddIyOwIp8dvyGseY5YBrU7Clkah/iob0BEvbmHHz9SoJAgK0j3oDrLpS3k3r3VtpzA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Julia\\source\\repos\\DBTestMockup.Data\\DBTestMockup.Data.csproj",
+  "projectFilePath": "C:\\Users\\Julia\\Documents\\GitHub\\FontysSoftware\\DbUnitTestFolder\\DBTestMockup.Data\\DBTestMockup.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Julia\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.0\\microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
     "C:\\Users\\Julia\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
