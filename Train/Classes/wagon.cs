@@ -24,125 +24,63 @@ namespace Train.Classes
             int wagonPoints = 0;
             foreach (Animal animal in animals)
             {
-
                 switch (animal.size)
                 {
                     case size.small:
-                        if (!(hasCarnivoreS || hasCarnivoreM || hasCarnivoreL))
+                        if (hasCarnivoreS || hasCarnivoreM || hasCarnivoreL)
                         {
-                            if (wagonPoints <= 10)
+                            Console.WriteLine("Het is te gevaarlijk om een dier in deze wagon toe te voegen!");
+                            //Create end point
+                        }
+
+                        if (wagonPoints < 10)
+                        {
+                            animalsInWagon.Add(animal);
+                            wagonPoints += 1;
+                            if (animal.eatsMeat)
                             {
-                                wagonPoints += 1;
-                                animalsInWagon.Add(animal);
-                                if (animal.eatsMeat)
-                                {
-                                    hasCarnivoreS = true;
-                                }
-                            }
-                            else
-                            {
-                                result = "De wagon zit vol";
-                                Console.WriteLine(result);
+                                hasCarnivoreS = true;
                             }
                         }
-                        else
-                        {
-                            result = "Er zitten grotere vleeseters in de wagon";
-                            Console.WriteLine(result);
-                        }
+                        //Create end point for when wagon is full
                         break;
                     case size.medium:
-                        if (!(hasCarnivoreM || hasCarnivoreL))
+                        if (hasCarnivoreM || hasCarnivoreL)
                         {
-                            if (wagonPoints <= 10)
+                            Console.WriteLine("Het is te gevaarlijk om een dier in deze wagon toe te voegen!");
+                            //Create end point
+                        }
+                        if (wagonPoints < 8)
+                        {
+                            animalsInWagon.Add(animal);
+                            wagonPoints += 3;
+                            if (animal.eatsMeat)
                             {
-                                wagonPoints += 3;
-                                animalsInWagon.Add(animal);
-                                if (animal.eatsMeat)
-                                {
-                                    hasCarnivoreM = true;
-                                }
-                            }
-                            else
-                            {
-                                result = "De wagon zit vol";
+                                hasCarnivoreM = true;
                             }
                         }
-                        else
-                        {
-                            result = "Er zitten grotere vleeseters in de wagon";
-                            Console.WriteLine(result);
-                        }
+                        //Create end point for when wagon is full
                         break;
                     case size.large:
-                        if (!(hasCarnivoreL))
+                        if (hasCarnivoreL)
                         {
-                            if (wagonPoints <= 10)
+                            Console.WriteLine("Het is te gevaarlijk om een dier in deze wagon toe te voegen!");
+                            //Create end point
+                        }
+
+                        if (wagonPoints < 6)
+                        {
+                            animalsInWagon.Add(animal);
+                            wagonPoints += 5;
+                            if (animal.eatsMeat)
                             {
-                                wagonPoints += 5;
-                                animalsInWagon.Add(animal);
-                                if (animal.eatsMeat)
-                                {
-                                    hasCarnivoreL = true;
-                                }
-                            }
-                            else
-                            {
-                                result = "De wagon zit vol";
-                                Console.WriteLine(result);
+                                hasCarnivoreL = true;
                             }
                         }
-                        else
-                        {
-                            result = "Er zitten andere vleeseters in de wagon";
-                            Console.WriteLine(result);
-                        }
+                        //Create end point for when wagon is full
                         break;
                 }
-                if (wagonPoints == 10)
-                {
-                    printList();
-                    result = "De wagon zit vol";
-                    Console.WriteLine(result);
-                }
             }
-            printList();
-            RemoveList();
-            if (animals.Count > 0)
-            {
-                Console.WriteLine("New Wagon");
-                wagon wagonNew = new wagon();
-                wagonNew.Fill();
-            }
-            result = "Done";
-            Console.WriteLine(result);
-        }
-
-        public void printList()
-        {
-            foreach (Animal animal in animalsInWagon)
-            {
-                Console.WriteLine(animal.species);
-            }
-        }
-
-        public void RemoveList()
-        {
-            foreach(Animal animal in animalsInWagon)
-            {
-                animals.Remove(animal);
-            }
-        }
-
-        public void addToList()
-        {
-            animals.Add(new Animal(size.medium, "Cow", false));
-            animals.Add(new Animal(size.large, "Elephant", true));
-            animals.Add(new Animal(size.small, "Ant", true));
-            animals.Add(new Animal(size.large, "Dinosaur", true));
-            animals.Add(new Animal(size.large, "Tiger", true));
-            animals.Add(new Animal(size.medium, "Horse", true));
-            animals.Add(new Animal(size.large, "Moose", true));
         }
     }
 }
