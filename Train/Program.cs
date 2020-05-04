@@ -8,9 +8,9 @@ namespace Train
     {
         static void Main(string[] args)
         {
-            wagon Wagon = new wagon();
-            Wagon.addToList();
-            Wagon.Fill();
+            Wagon wagon = new Wagon();
+            wagon.AddToList();
+            wagon.Fill();
         }
     }
 }
