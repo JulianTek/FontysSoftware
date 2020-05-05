@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using Train.Classes;
-using System.Text;
 
 namespace Train.Classes
 {
@@ -31,7 +29,7 @@ namespace Train.Classes
                     case size.small:
                         if (hasCarnivoreS || hasCarnivoreM || hasCarnivoreL)
                         {
-                            TooDangerous(animal);
+                            TooDangerous();
                             break;
                         }
 
@@ -47,12 +45,12 @@ namespace Train.Classes
                             }
                             break;
                         }
-                        WagonFull(animal);
+                        WagonFull();
                         break;
                     case size.medium:
                         if (hasCarnivoreM || hasCarnivoreL)
                         {
-                            TooDangerous(animal);
+                            TooDangerous();
                             break;
                         }
                         if (wagonPoints < 8)
@@ -68,12 +66,12 @@ namespace Train.Classes
 
                             break;
                         }
-                        WagonFull(animal);
+                        WagonFull();
                         break;
                     case size.large:
                         if (hasCarnivoreL)
                         {
-                            TooDangerous(animal);
+                            TooDangerous();
                             break;
                         }
 
@@ -90,25 +88,20 @@ namespace Train.Classes
 
                             break;
                         }
-                        WagonFull(animal);
+                        WagonFull();
                         break;
                 }
             }
             
         }
 
-        public void WagonFull(Animal animal)
+        public void WagonFull()
         {
-            foreach (Animal _animal in animalsInWagon)
-            {
-            }
             animalsInWagon.Clear();
             Console.WriteLine("De wagon is vol!");
             if (!(animals.Count >= 0))
             {
-                Console.WriteLine("Nieuwe wagon!");
-                Wagon wagonNew = new Wagon();
-                wagonNew.Fill();
+                NewWagon();
             }
             else
             {
@@ -116,15 +109,24 @@ namespace Train.Classes
             }
         }
 
-        public void TooDangerous(Animal animal)
+        public void TooDangerous()
         {
             Console.WriteLine("Het is te gevaarlijk om een dier in deze wagon toe te voegen!");
-            if (!(animals.Count >= 0))
+            if (!(animals.Count <= 0))
             {
-                Console.WriteLine("Nieuwe wagon!");
-                Wagon wagonNew = new Wagon();
-                wagonNew.Fill();
+                NewWagon();
             }
+        }
+
+        public void NewWagon()
+        {
+            Console.WriteLine("Nieuwe wagon!");
+            Wagon wagonNew = new Wagon();
+            foreach (Animal animal in animals)
+            {
+                wagonNew.animals.Add(animal);
+            }
+            wagonNew.Fill();
         }
 
         public void AddToList()
