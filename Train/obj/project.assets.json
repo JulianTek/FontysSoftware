@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Julia\\source\\repos\\Train\\Train.csproj",
+      "projectUniqueName": "C:\\Users\\Julia\\Documents\\GitHub\\FontysSoftware\\Train\\Train.csproj",
       "projectName": "Train",
-      "projectPath": "C:\\Users\\Julia\\source\\repos\\Train\\Train.csproj",
+      "projectPath": "C:\\Users\\Julia\\Documents\\GitHub\\FontysSoftware\\Train\\Train.csproj",
       "packagesPath": "C:\\Users\\Julia\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Julia\\source\\repos\\Train\\obj\\",
+      "outputPath": "C:\\Users\\Julia\\Documents\\GitHub\\FontysSoftware\\Train\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

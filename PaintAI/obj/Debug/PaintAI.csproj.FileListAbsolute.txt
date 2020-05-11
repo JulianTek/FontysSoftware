@@ -1,0 +1,10 @@
+C:\Users\Julia\source\repos\PaintAI\bin\Debug\PaintAI.exe.config
+C:\Users\Julia\source\repos\PaintAI\bin\Debug\PaintAI.exe
+C:\Users\Julia\source\repos\PaintAI\bin\Debug\PaintAI.pdb
+C:\Users\Julia\source\repos\PaintAI\obj\Debug\PaintAI.csprojAssemblyReference.cache
+C:\Users\Julia\source\repos\PaintAI\obj\Debug\PaintAI.Form1.resources
+C:\Users\Julia\source\repos\PaintAI\obj\Debug\PaintAI.Properties.Resources.resources
+C:\Users\Julia\source\repos\PaintAI\obj\Debug\PaintAI.csproj.GenerateResource.cache
+C:\Users\Julia\source\repos\PaintAI\obj\Debug\PaintAI.csproj.CoreCompileInputs.cache
+C:\Users\Julia\source\repos\PaintAI\obj\Debug\PaintAI.exe
+C:\Users\Julia\source\repos\PaintAI\obj\Debug\PaintAI.pdb
