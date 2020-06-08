@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "TmvRELmKGLrtcYfHhU4B8jHqOT4NvSdELWrqw1R+GtGEEzL5MeRgq2eeRG7/jEKNxO6yo/esl7wfaMXHJx6N5A==",
+  "dgSpecHash": "DCC36OaNBPV1e4vRHFJchajI1p1a0m2aDky6NYRWO13ZvBTWMDtGAN9NeS8LXE8MaL9rqySRY4ByjP2yIcRnBQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Julia\\Documents\\GitHub\\FontysSoftware\\Train\\Train.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Julia\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
   "logs": []
 }
