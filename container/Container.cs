@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace container
 {
     //Ctor already checks whether or not a container is empty and will change its parameter, therefore there's no need to check in the generator method
-    class Container
+    public class Container
     {
         public Container(bool isEmpty, bool contentNeedsCooling, bool valuableContent, int weight)
         {
@@ -30,7 +30,7 @@ namespace container
         public bool ValuableContent { get; private set; }
         public bool ContentNeedsCooling { get; private set; }
         public bool IsEmpty { get; private set; }
-        public int Weight { get; private set; }
+        public int Weight { get; set; }
         public int WeightOnTop { get; private set; }
     }
 }

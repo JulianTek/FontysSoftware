@@ -1,0 +1,10 @@
+C:\Users\Julia\source\repos\container\bin\Debug\container.exe.config
+C:\Users\Julia\source\repos\container\bin\Debug\container.exe
+C:\Users\Julia\source\repos\container\bin\Debug\container.pdb
+C:\Users\Julia\source\repos\container\obj\Debug\container.csprojAssemblyReference.cache
+C:\Users\Julia\source\repos\container\obj\Debug\container.Form1.resources
+C:\Users\Julia\source\repos\container\obj\Debug\container.Properties.Resources.resources
+C:\Users\Julia\source\repos\container\obj\Debug\container.csproj.GenerateResource.cache
+C:\Users\Julia\source\repos\container\obj\Debug\container.csproj.CoreCompileInputs.cache
+C:\Users\Julia\source\repos\container\obj\Debug\container.exe
+C:\Users\Julia\source\repos\container\obj\Debug\container.pdb

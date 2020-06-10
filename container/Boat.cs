@@ -6,20 +6,58 @@ using System.Threading.Tasks;
 
 namespace container
 {
-    class Boat
+    public class Boat
     {
 
         public Boat(int maxWeight, List<Container> containers, int maxContainerCount)
         {
             MaxWeight = maxWeight;
             Containers = containers;
+            ContainersInBackLeft = new List<Container>();
+            ContainersInBackRight = new List<Container>();
+            ContainersInFrontLeft = new List<Container>();
+            ContainersInFrontRight = new List<Container>();
+            ContainersLeft = new List<Container>();
+            ContainersRight = new List<Container>();
             CurrentWeight = 0;
             WeightLeft = 0;
             WeightRight = 0;
             MaxContainerCount = maxContainerCount;
         }
 
-        // Weight always in tonnes
+        public Boat(int maxWeight, int maxContainerCount)
+        {
+            MaxWeight = maxWeight;
+            Containers = new List<Container>();
+            ContainersInBackLeft = new List<Container>();
+            ContainersInBackRight = new List<Container>();
+            ContainersInFrontLeft = new List<Container>();
+            ContainersInFrontRight = new List<Container>();
+            ContainersLeft = new List<Container>();
+            ContainersRight = new List<Container>();
+            CurrentWeight = 0;
+            WeightLeft = 0;
+            WeightRight = 0;
+            MaxContainerCount = maxContainerCount;
+        }
+
+        public Boat(int maxWeight, int width, int height)
+        {
+            MaxWeight = maxWeight;
+            Containers = new List<Container>();
+            ContainersInBackLeft = new List<Container>();
+            ContainersInBackRight = new List<Container>();
+            ContainersInFrontLeft = new List<Container>();
+            ContainersInFrontRight = new List<Container>();
+            ContainersLeft = new List<Container>();
+            ContainersRight = new List<Container>();
+            CurrentWeight = 0;
+            WeightLeft = 0;
+            WeightRight = 0;
+            MaxContainerCount = width * height;
+        }
+
+        // Assumptions: weight always in tonnes, MaxContainerCount is based on width and height, there is enough space between containers to walk through, but not access
         public int MaxContainerCount { get; }
         public int CurrentContainerCount { get; private set; }
         public int MaxWeight { get; }
@@ -27,14 +65,14 @@ namespace container
         public int WeightLeft { get; }
         public int WeightRight { get; }
         public List<Container> Containers { get; }
-        public List<Container> ContainersLeft { get; private set; }
-        public List<Container> ContainersRight { get; private set; }
-        public List<Container> ContainersInFrontLeft { get; private set; }
-        public List<Container> ContainersInFrontRight { get; private set; }
-        public List<Container> ContainersInBackLeft { get; private set; }
-        public List<Container> ContainersInBackRight { get; private set; }
+        public List<Container> ContainersLeft { get; }
+        public List<Container> ContainersRight { get; }
+        public List<Container> ContainersInFrontLeft { get; }
+        public List<Container> ContainersInFrontRight { get;}
+        public List<Container> ContainersInBackLeft { get; }
+        public List<Container> ContainersInBackRight { get; }
 
-
+        // Assumptions: Containers in the front and back can still be reached from one side
         public void Sort(List<Container> containers)
         {
             for (int i = 0; i < containers.Count; i++)
@@ -44,37 +82,37 @@ namespace container
                     switch (CheckPlacement(containers[i], containers[i].Weight, CurrentWeight, WeightLeft))
                     {
                         case ShipPosition.FrontLeft:
-                            if (CheckIfContainerGoesOnTop(containers[i], containers[i].WeightOnTop))
+                            if (CheckIfContainerGoesOnTop(ContainersInFrontLeft, containers[i].Weight))
                             {
                                 AddContainerToFrontLeft(containers[i]);
                             }
                             break;
                         case ShipPosition.FrontRight:
-                            if (CheckIfContainerGoesOnTop(containers[i], containers[i].WeightOnTop))
+                            if (CheckIfContainerGoesOnTop(ContainersInFrontRight, containers[i].Weight))
                             {
                                 AddContainerToFrontLeft(containers[i]);
                             }
                             break;
                         case ShipPosition.Left:
-                            if (CheckIfContainerGoesOnTop(containers[i], containers[i].WeightOnTop))
+                            if (CheckIfContainerGoesOnTop( ContainersLeft, containers[i].Weight))
                             {
                                 AddContainerLeft(containers[i]);
                             }
                             break;
                         case ShipPosition.Right:
-                            if (CheckIfContainerGoesOnTop(containers[i], containers[i].WeightOnTop))
+                            if (CheckIfContainerGoesOnTop(ContainersRight, containers[i].Weight))
                             {
                                 AddContainerRight(containers[i]);
                             }
                             break;
                         case ShipPosition.BackLeft:
-                            if (CheckIfContainerGoesOnTop(containers[i], containers[i].WeightOnTop))
+                            if (CheckIfContainerGoesOnTop(ContainersInBackLeft, containers[i].Weight))
                             {
                                 AddContainerToBackLeft(containers[i]);
                             }
                             break;
                         case ShipPosition.BackRight:
-                            if (CheckIfContainerGoesOnTop(containers[i], containers[i].WeightOnTop))
+                            if (CheckIfContainerGoesOnTop(ContainersInBackRight, containers[i].Weight))
                             {
                                 AddContainerToBackRight(containers[i]);
                             }
@@ -89,7 +127,7 @@ namespace container
                     CurrentContainerCount += 1;
                 }
 
-                if (CurrentContainerCount == MaxContainerCount)
+                if (CurrentContainerCount == MaxContainerCount || containers.Count == 0)
                 {
                     Depart();
                 }
@@ -97,7 +135,7 @@ namespace container
         }
 
         //If the weight limit has been reached, or the minimum weight has not been reached, return false. else return true
-        private bool CheckIfContainerCanBeAdded(int containerWeight)
+        public bool CheckIfContainerCanBeAdded(int containerWeight)
         {
             if (!CheckIfShipCanLeave(CurrentWeight, MaxWeight))
             {
@@ -113,49 +151,44 @@ namespace container
         }
 
 
-        // If all requirements are met, this method is run. This one just keeps track of all containers on a ship
-        public void AddContainerToShip(Container container)
-        {
-            Containers.Add(container);
-        }
 
         //This method adds the given container to the right side of the ship
-        private void AddContainerRight(Container container)
+        public void AddContainerRight(Container container)
         {
             ContainersRight.Add(container);
             Containers.Remove(container);
         }
 
         // Ditto, except for the left of the ship
-        private void AddContainerLeft(Container container)
+        public void AddContainerLeft(Container container)
         {
             ContainersLeft.Add(container);
             Containers.Remove(container);
         }
 
         // Ditto, except for the front left (in case container content needs to be cooled)
-        private void AddContainerToFrontLeft(Container container)
+        public void AddContainerToFrontLeft(Container container)
         {
             ContainersInFrontLeft.Add(container);
             Containers.Remove(container);
         }
 
         // Ditto, except for the front right
-        private void AddContainerToFrontRight(Container container)
+        public void AddContainerToFrontRight(Container container)
         {
             ContainersInFrontRight.Add(container);
             Containers.Remove(container);
         }
 
         //Ditto, except for back left
-        private void AddContainerToBackLeft(Container container)
+        public void AddContainerToBackLeft(Container container)
         {
             ContainersInBackLeft.Add(container);
             Containers.Remove(container);
         }
 
         //Ditto, except for back right
-        private void AddContainerToBackRight(Container container)
+        public void AddContainerToBackRight(Container container)
         {
             ContainersInBackRight.Add(container);
             Containers.Remove(container);
@@ -163,7 +196,7 @@ namespace container
 
 
         // This method checks where the container needs to be placed
-        private ShipPosition CheckPlacement(Container container, int containerWeight, int shipWeight, int shipWeightLeft)
+        public ShipPosition CheckPlacement(Container container, int containerWeight, int shipWeight, int shipWeightLeft)
         {
             if (shipWeight != 0)
             {
@@ -174,6 +207,12 @@ namespace container
                     {
                         return ShipPosition.FrontRight;
                     }
+
+                    if (container.ContentNeedsCooling)
+                    {
+                        return ShipPosition.FrontRight;
+                    }
+
                     if (container.ValuableContent)
                     {
                         return ShipPosition.BackRight;
@@ -182,7 +221,33 @@ namespace container
                     return ShipPosition.Right;
                 }
             }
+
+            if (WeightRight < WeightLeft)
+            {
+                if (container.ContentNeedsCooling && container.ValuableContent)
+                {
+                    return ShipPosition.FrontRight;
+                }
+
+                if (container.ContentNeedsCooling)
+                {
+                    return ShipPosition.FrontRight;
+                }
+
+                if (container.ValuableContent)
+                {
+                    return ShipPosition.BackRight;
+                }
+
+                return ShipPosition.Right;
+
+            }
             if (container.ContentNeedsCooling && container.ValuableContent)
+            {
+                return ShipPosition.FrontLeft;
+            }
+
+            if (container.ContentNeedsCooling)
             {
                 return ShipPosition.FrontLeft;
             }
@@ -197,9 +262,19 @@ namespace container
         }
 
         // This method checks if can go on top of another
-        private bool CheckIfContainerGoesOnTop(Container container, int weightOnTop)
+        public bool CheckIfContainerGoesOnTop(List<Container> containers, int containerWeight)
         {
-            if (weightOnTop < 120 && !container.ValuableContent)
+            int weight = 0;
+            foreach (Container containerToCheck in containers)
+            {
+                if (containerToCheck.ValuableContent)
+                {
+                    return false;
+                }
+
+                weight += containerToCheck.Weight;
+            }
+            if (weight + containerWeight <= 120)
             {
                 return true;
             }
@@ -208,7 +283,7 @@ namespace container
         }
 
         //This method checks if adding the container will go past the weight limit
-        private bool CheckIfWeightLimitReached(int boatCurrentWeight, int boatMaxWeight, int containerWeight)
+        public bool CheckIfWeightLimitReached(int boatCurrentWeight, int boatMaxWeight, int containerWeight)
         {
             if (boatCurrentWeight + containerWeight > boatMaxWeight)
             {
@@ -219,7 +294,7 @@ namespace container
         }
 
         //This method checks if the minimum weight has been met
-        private bool CheckIfShipCanLeave(int currentWeight, int maxWeight)
+        public bool CheckIfShipCanLeave(int currentWeight, int maxWeight)
         {
             if (currentWeight >= (maxWeight / 2))
             {
@@ -227,6 +302,11 @@ namespace container
             }
 
             return false;
+        }
+
+        public void Depart()
+        {
+
         }
     }
 }

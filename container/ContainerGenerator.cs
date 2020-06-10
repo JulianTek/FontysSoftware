@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace container
 {
-    class ContainerGenerator
+    public class ContainerGenerator
     {
         public  Random rnd = new Random();
+        public List<Container> Containers = new List<Container>();
 
         //Method that generates x amount of random containers
         public  List<Container> GenerateRandomContainers(int amount, int maxWeight)
@@ -18,8 +19,10 @@ namespace container
             {
                 Container container = new Container(RandomBool(), RandomBool(), RandomBool(), rnd.Next(0, maxWeight / 2));
                 containers.Add(container);
+                containers.Add(container);
             }
 
+            ValidateContainerWeightList(containers);
             return containers;
         }
 
@@ -32,7 +35,13 @@ namespace container
         //Generates empty container
         public Container GenerateEmptyContainer(int maxWeight)
         {
-            return new Container(true, false, false, rnd.Next(0, maxWeight / 2));
+            Container container = new Container(true, false, false, rnd.Next(0, maxWeight / 2));
+            if (container.Weight > 30)
+            {
+                container.Weight = 30;
+            }
+
+            return container;
         }
 
         //Generates one container with valuable content
@@ -47,6 +56,20 @@ namespace container
             return new Container(false, true, true, rnd.Next(0, maxWeight / 2));
         }
 
+        public List<Container> ValidateContainerWeightList(List<Container> containers)
+        {
+            foreach (Container container in containers)
+            {
+                if (container.Weight > 30)
+                {
+                    container.Weight = 30;
+                }
+            }
+
+            return containers;
+        }
+
+        
 
         private bool RandomBool()
         {
