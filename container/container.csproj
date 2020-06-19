@@ -46,9 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Boat.cs" />
-    <Compile Include="Container.cs" />
-    <Compile Include="ContainerGenerator.cs" />
+    <Compile Include="Classes\Boat.cs" />
+    <Compile Include="Classes\BoatWeight.cs" />
+    <Compile Include="Classes\Container.cs" />
+    <Compile Include="Classes\ContainerGenerator.cs" />
+    <Compile Include="Classes\ContainerStack.cs" />
+    <Compile Include="Classes\Crane.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

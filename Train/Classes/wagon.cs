@@ -3,33 +3,33 @@ using System.Collections.Generic;
 
 namespace Train.Classes
 {
-    class Wagon
+    public class Wagon
     {
         public Wagon()
         {
             hasCarnivoreS = false;
             hasCarnivoreM = false;
             hasCarnivoreL = false;
+            wagonPoints = 0;
         }
 
-        private List<Animal> animals = new List<Animal>();
-        private List<Animal> animalsInWagon = new List<Animal>();
-        private List<Animal> templist = new List<Animal>();
+        public List<Animal> animals = new List<Animal>();
+        public List<Animal> animalsInWagon = new List<Animal>();
         public bool hasCarnivoreS { get; private set; }
         public bool hasCarnivoreM { get; private set; }
-        public bool hasCarnivoreL { get; set; }
+        public bool hasCarnivoreL { get; private set; }
+        public int wagonPoints { get; set; }
 
         public void Fill()
         {
 
-            int wagonPoints = 0;
             for (int i = 0; i < animals.Count; i++)
             {
                 Animal animal = animals[i];
                 switch (animal.size)
                 {
                     case size.small:
-                        if (hasCarnivoreS || hasCarnivoreM || hasCarnivoreL)
+                        if (CheckIfSmallAnimalIsSafe(this))
                         {
                             TooDangerous();
                             break;
@@ -37,27 +37,27 @@ namespace Train.Classes
 
                         if (CheckIfSmallAnimalFits(wagonPoints))
                         {
-                            AddAnimalS(animal, wagonPoints, this);
+                            AddAnimalS(animal, this);
                             break;
                         }
                         WagonFull();
                         break;
                     case size.medium:
-                        if (hasCarnivoreM || hasCarnivoreL)
+                        if (CheckIfMedAnimalIsSafe(this))
                         {
                             TooDangerous();
                             break;
                         }
                         if (CheckIfMediumAnimalFits(wagonPoints))
                         {
-                            AddAnimalM(animal, wagonPoints, this);
+                            AddAnimalM(animal, this);
 
                             break;
                         }
                         WagonFull();
                         break;
                     case size.large:
-                        if (hasCarnivoreL)
+                        if (CheckIfLargeAnimalIsSafe(this))
                         {
                             TooDangerous();
                             break;
@@ -65,7 +65,7 @@ namespace Train.Classes
 
                         if (CheckIfLargeAnimalFits(wagonPoints))
                         {
-                            AddAnimalL(animal, wagonPoints, this);
+                            AddAnimalL(animal, this);
                             break;
                         }
                         WagonFull();
@@ -109,16 +109,8 @@ namespace Train.Classes
             wagonNew.Fill();
         }
 
-        public void AddToList()
-        {
-            animals.Add(new Animal(size.large, "Dinosaur", true));
-            animals.Add(new Animal(size.medium, "Big Fish", false));
-            animals.Add(new Animal(size.small, "Mouse", false));
-            animals.Add(new Animal(size.large, "Dragon", true));
-            animals.Add(new Animal(size.small, "Ant", true));
-        }
 
-        private void AddAnimalS(Animal animal, int wagonPoints, Wagon wagon)
+        public void AddAnimalS(Animal animal, Wagon wagon)
         {
             animalsInWagon.Add(animal);
             animals.Remove(animal);
@@ -129,7 +121,7 @@ namespace Train.Classes
                wagon.hasCarnivoreS  = true;
             }
         }
-        private void AddAnimalM(Animal animal, int wagonPoints, Wagon wagon)
+        public void AddAnimalM(Animal animal, Wagon wagon)
         {
             animalsInWagon.Add(animal);
             animals.Remove(animal);
@@ -141,7 +133,7 @@ namespace Train.Classes
             }
         }
 
-        private void AddAnimalL(Animal animal, int wagonPoints, Wagon wagon)
+        public void AddAnimalL(Animal animal, Wagon wagon)
         {
             animalsInWagon.Add(animal);
             animals.Remove(animal);
@@ -153,7 +145,7 @@ namespace Train.Classes
             }
         }
 
-        private bool CheckIfSmallAnimalFits(int wagonPoints)
+        public bool CheckIfSmallAnimalFits(int wagonPoints)
         {
             if (wagonPoints + 1 <= 10)
             {
@@ -163,7 +155,7 @@ namespace Train.Classes
             return false;
         }
 
-        private bool CheckIfMediumAnimalFits(int wagonPoints)
+        public bool CheckIfMediumAnimalFits(int wagonPoints)
         {
             if (wagonPoints + 3 <= 10)
             {
@@ -173,7 +165,7 @@ namespace Train.Classes
             return false;
         }
 
-        private bool CheckIfLargeAnimalFits(int wagonPoints)
+        public bool CheckIfLargeAnimalFits(int wagonPoints)
         {
             if (wagonPoints + 5 <= 10)
             {
@@ -181,6 +173,36 @@ namespace Train.Classes
             }
 
             return false;
+        }
+
+        public bool CheckIfSmallAnimalIsSafe(Wagon wagon)
+        {
+            if (wagon.hasCarnivoreS || wagon.hasCarnivoreM || wagon.hasCarnivoreL)
+            {
+                return false;
+            }
+
+            return true;
+        }
+
+        public bool CheckIfMedAnimalIsSafe(Wagon wagon)
+        {
+            if (wagon.hasCarnivoreM || wagon.hasCarnivoreL)
+            {
+                return false;
+            }
+
+            return true;
+        }
+
+        public bool CheckIfLargeAnimalIsSafe(Wagon wagon)
+        {
+            if (wagon.hasCarnivoreL)
+            {
+                return false;
+            }
+
+            return true;
         }
     }
 }

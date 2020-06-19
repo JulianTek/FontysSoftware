@@ -47,55 +47,71 @@ namespace container
 
         private void btnSort_Click(object sender, EventArgs e)
         {
-            Boat b = new Boat((int)udBoatWeight.Value, (int)udWidth.Value, (int)udHeight.Value);
+            Boat b = new Boat((int) udMaxWeight.Value, (int) udWidth.Value, (int) udHeight.Value, containers);
             b.Sort(containers);
             lbContainers.Items.Clear();
-            ProcessResults(containers, b.ContainersLeft, b.ContainersInFrontLeft, b.ContainersInBackLeft,
-                b.ContainersRight, b.ContainersInFrontRight, b.ContainersInBackRight);
+            for (int i = 0; i < udWidth.Value; i++)
+            {
+                if (b.ContainersInBackLeft.ContainsKey(i))
+                {
+                    ProcessResults(b.ContainersInBackLeft[i].StackedContainers, ShipPosition.BackLeft, i);
+                }
+                if (b.ContainersInBackRight.ContainsKey(i))
+                {
+                    ProcessResults(b.ContainersInBackRight[i].StackedContainers, ShipPosition.BackRight, i);
+                }
+                if (b.ContainersLeft.ContainsKey(i))
+                {
+                    ProcessResults(b.ContainersLeft[i].StackedContainers, ShipPosition.Left, i);
+                }
+                if (b.ContainersRight.ContainsKey(i))
+                {
+                    ProcessResults(b.ContainersRight[i].StackedContainers, ShipPosition.Right, i);
+                }
+                if (b.ContainersInFrontLeft.ContainsKey(i))
+                {
+                    ProcessResults(b.ContainersInFrontLeft[i].StackedContainers, ShipPosition.FrontLeft, i);
+                }
+                if (b.ContainersInFrontRight.ContainsKey(i))
+                {
+                    ProcessResults(b.ContainersInFrontRight[i].StackedContainers, ShipPosition.FrontRight, i);
+                }
+            }
         }
 
-        private void ProcessResults(List<Container> containersLeftOver, List<Container> containersLeft,
-            List<Container> containersFrontLeft, List<Container> containersBackLeft, List<Container> containersRight, List<Container> containersFrontRight, List<Container> containersBackRight)
+        private void ProcessResults(List<Container> list, ShipPosition direction, int width)
         {
-            foreach (Container container in containersBackRight)
+            foreach (Container container in list)
             {
-                lbBackRight.Items.Add("Container with weight " + container.Weight);
-                containers.Remove(container);
-            }
-
-            foreach (Container container in containersRight)
-            {
-                lbRight.Items.Add("Container with weight " + container.Weight);
-                containers.Remove(container);
-            }
-
-            foreach (Container container in containersFrontRight)
-            {
-                lbFrontRight.Items.Add("Container with weight " + container.Weight);
-                containers.Remove(container);
-            }
-
-            foreach (Container container in containersBackLeft)
-            {
-                lbBackRight.Items.Add("Container with weight " + container.Weight);
-                containers.Remove(container);
-            }
-
-            foreach (Container container in containersLeft)
-            {
-                lbBackRight.Items.Add("Container with weight " + container.Weight);
-                containers.Remove(container);
-            }
-
-            foreach (Container container in containersFrontLeft)
-            {
-                lbBackRight.Items.Add("Container with weight " + container.Weight);
-                containers.Remove(container);
-            }
-
-            foreach (Container container in containersLeftOver)
-            {
-                lbContainers.Items.Add("Container with" + container.ValuableContent + " valuable content and " + container.ContentNeedsCooling + " cooling requirement and " + container.Weight + " weight");
+                switch (direction)
+                {
+                    case ShipPosition.FrontLeft:
+                        lbFrontLeft.Items.Add("Container with weight " + container.Weight);
+                        containers.Remove(container);
+                        break;
+                    case ShipPosition.FrontRight:
+                        lbFrontRight.Items.Add("Container with weight " + container.Weight);
+                        containers.Remove(container);
+                        break;
+                    case ShipPosition.BackLeft:
+                        lbBackLeft.Items.Add("Container with weight " + container.Weight);
+                        containers.Remove(container);
+                        break;
+                    case ShipPosition.BackRight:
+                        lbBackRight.Items.Add("Container with weight " + container.Weight);
+                        containers.Remove(container);
+                        break;
+                    case ShipPosition.Left:
+                        lbLeft.Items.Add("Container with weight " + container.Weight);
+                        containers.Remove(container);
+                        break;
+                    case ShipPosition.Right:
+                        lbRight.Items.Add("Container with weight " + container.Weight);
+                        containers.Remove(container);
+                        break;
+                    default:
+                        throw new ArgumentOutOfRangeException(nameof(direction), direction, null);
+                }
             }
         }
     }

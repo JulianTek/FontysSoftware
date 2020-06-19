@@ -4,13 +4,13 @@ using System.Text;
 
 namespace Train.Classes
 {
-    enum size
+    public enum size
     {
         small,
         medium,
         large
     }
-    class Animal
+    public class Animal
     {
 
         public Animal(size size, string species, bool eatsMeat)
@@ -19,9 +19,10 @@ namespace Train.Classes
             this.species = species;
             this.size = size;
         }
-        public string species { get; private set; }
-        public bool eatsMeat { get; private set; }
-        public size size { get; private set; }
+
+        public string species { get; }
+        public bool eatsMeat { get; }
+        public size size { get; }
 
 
 
